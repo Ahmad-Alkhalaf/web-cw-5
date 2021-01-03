@@ -62,7 +62,30 @@
               يا للهول! 😲          أكبر من أو يساوي 30
               لا أدري! 🤷🏻‍♀️                   أي شي ثاني
         */
+
+        let height = document.getElementById(`height`)
+        let weight = document.getElementById(`weight`)
+        
+
+        let BMI = ( weight.value / (height.value*height.value) )
+
+        //  use .value to get the value of the ID
+
+        console.log(height.value)
+        console.log(weight.value)
+        console.log(BMI)
+
+        // we didnt use .value for BMI because we already got the value 
+        // from the weight and height ID and calculate it to a value and assign it to the variable BMI
+
+        if (BMI < 20 ) {alert(`أنت نحيف للغاية`)}
+        else if ( 20 <= BMI && BMI <= 29 ) {alert(`وزنك جيد`)} 
+        else if (BMI > 30) {alert(`!يا للهول`)}
+        else { alert(`لا ادري!`) }
+ 
       }
+
+
     </script>
   </body>
 </html>
